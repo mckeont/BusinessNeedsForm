@@ -1,0 +1,205 @@
+   <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Business Needs Assessment Form</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <header>
+      <h3 id="main-heading" class="heading">Business Needs Assessment form</h3>
+      <h4 class="sub-heading">Template Design</h4>
+    </header>
+  <main>
+    <section>
+      <form method="post" action="process.php">
+        <fieldset>
+          <legend>Company Information</legend>
+
+          <div class="form-group">
+            <label for="your_name"> your_name:</label>
+            <input type="text" name="your_name" id=" your_name">
+          </div>
+          <div class="form-group">
+            <label for="your_title"> your_title:</label>
+            <input type="text" name="your_title" id=" your_title">
+          </div>
+          <div class="form-group">
+            <label for="company_name"> company_name:</label>
+            <input type="text" name="company_name" id="company_name">
+          </div>
+
+          <div class="form-group">
+            <label for="type_of_business"> type_of_business:</label>
+            <input type="text" name="type_of_business" id=" type_of_business">
+          </div>
+
+          <div class="form-group">
+            <label for="website"> website:</label>
+            <input type="text" name="website" id="website">
+          </div>
+
+          <div class="form-group">
+            <label for="email_address"> email_address:</label>
+            <input type="text" name="email_address" id="email_address">
+          </div>
+
+          <div class="form-group">
+            <label for="company_phone"> company_phone:</label>
+            <input type="text" name="company_phone" id="company_phone">
+          </div>
+          <div class="form-group">
+            <label for="cell_phone"> cell_phone:</label>
+            <input type="text" name="cell_phone" id="cell_phone">
+          </div>
+          <div class="form-group">
+            <label for="street_address"> street_address:</label>
+            <input type="text" name="street_addresss" id="street_address">
+          </div>
+          <div class="form-group">
+            <label for="city"> city:</label>
+            <input type="text" name="city" id="city">
+          </div>
+          <div class="form-group">
+            <label for="state"> 	state:</label>
+            <input type="text" name="email_address" id="email_address">
+          </div>
+          <div class="form-group">
+            <label for="zip_code"> 	zip_code:</label>
+            <input type="text" name="zip_code" id="zip_code">
+          </div>
+          <div class="form-group">
+            <label for="please_contact_me_by"> 	please_contact_me_by:</label>
+            <input type="text" name="please_contact_me_by" id="please_contact_me_by">
+          </div>
+          <div class="form-group">
+            <label for="referred_by"> 		referred_by:</label>
+            <input type="text" name="	referred_by" id="	referred_by">
+          </div>
+          <div class="form-group">
+            <label for="other_authorized_contact_person"> 	other_authorized_contact_person:</label>
+            <input type="text" name="other_authorized_contact_person" id="other_authorized_contact_person">
+          </div>
+          <div class="form-group">
+            <label for="financial_management"> 	financial_management:</label>
+            <input type="text" name="financial_management" id="financial_management">
+          </div>
+
+          <div class="form-group">
+            <label for="marketing"> 		marketing:</label>
+            <input type="text" name="marketing" id="marketing">
+          </div>
+          <div class="form-group">
+            <label for="computer_systems"> 	computer_systems:</label>
+            <input type="text" name="computer_systems" id="computer_systems">
+          </div>
+          <div class="form-group">
+            <label for="general_management"> 	general_management:</label>
+            <input type="text" name="general_management" id="general_management">
+          </div>
+          <div class="form-group">
+            <label for="international_trade"> 	international_trade:</label>
+            <input type="text" name="international_trade" id="international_trade">
+          </div>
+          <div class="form-group">
+            <label for="personnel_management"> 		personnel_management:</label>
+            <input type="text" name="personnel_management" id="personnel_management">
+          </div>
+          <div class="form-group">
+            <label for="regulatory_compliance"> 		regulatory_compliance:</label>
+            <input type="text" name="regulatory_compliances" id="regulatory_compliance">
+          </div>
+          <div class="form-group">
+            <label for="education_delivery"> 		education_delivery:</label>
+            <input type="text" name="education_delivery" id="education_delivery">
+          </div>
+          <div class="form-group">
+            <label for="notify_events"> 			notify_events:</label>
+            <input type="text" name="notify_events" id="notify_events">
+          </div>
+          <div class="form-group">
+            <label for="business_opportunity"> 			business_opportunity:</label>
+            <input type="text" name="business_opportunity" id="business_opportunity">
+          </div>
+          <div class="form-group">
+            <label for="general_business_categories"> 			general_business_categories:</label>
+            <input type="text" name="general_business_categories" id="general_business_categories">
+          </div>
+          <div class="form-group">
+            <label for="sic_or_naics_code"> 		sic_or_naics_code:</label>
+            <input type="text" name="sic_or_naics_code" id="sic_or_naics_code">
+          </div>
+          <div class="form-group">
+            <label for="full_time_employees"> 	full_time_employees	:</label>
+            <input type="number" name="full_time_employees	" id="full_time_employees	">
+          </div>
+          <div class="form-group">
+            <label for="part_time_employees"> 		part_time_employees	:</label>
+            <input type="number" name="	part_time_employees	" id="	part_time_employees	">
+          </div>
+          <div class="form-group">
+            <label for="legal_form_of_organization"> 		legal_form_of_organization	:</label>
+            <input type="text" name="legal_form_of_organization" id="legal_form_of_organization">
+          </div>
+          <div class="form-group">
+            <label for="business_zip"> 		business_zip:</label>
+            <input type="text" name="business_zip" id="business_zip">
+          </div>
+          <div class="form-group">
+            <label for="business_ownership"> 		business_ownership:</label>
+            <input type="text" name="business_ownership" id="business_ownership">
+          </div>
+          <div class="form-group">
+            <label for="business_operation_years"> 		business_operation_years:</label>
+            <input type="number" name="business_operation_years" id="business_operation_years">
+          </div>
+          <div class="form-group">
+            <label for="business_owner_race"> 	business_owner_race:</label>
+            <input type="text" name="business_owner_race" id="business_owner_race">
+          </div>
+          <div class="form-group">
+            <label for="business_owner_ethnicity"> 	business_owner_ethnicity:</label>
+            <input type="text" name="business_owner_ethnicity" id="business_owner_ethnicity">
+          </div>
+          <div class="form-group">
+            <label for="business_revenue_last_year"> 	business_revenue_last_year:</label>
+            <input type="number" name="business_revenue_last_year" id="business_revenue_last_year">
+          </div>
+          <div class="form-group">
+            <label for="comments"> 	comments:</label>
+            <input type="text" name="comments" id="comments">
+          </div>
+        </fieldset>
+        <fieldset>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+
+
+</aside>
+
+    <!-- Leaflet dependencies -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <!-- Other dependencies -->
+    <script src= "js/jquery-2.2.0.js"></script>
+    <script src= "js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!-- <script src= "js/webcam.min.js"></script> -->
+    <!-- <script src="js/PA2020Census.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/main.js"></script> -->
+
+</body>
+</html>
